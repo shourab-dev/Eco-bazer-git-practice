@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray-–-900: #1a1a1a;
+    --gray-scale-gray-–-800: #333;
+    --gray-scale-gray-–-700: #4d4d4d;
+    --gray-scale-gray-–-600: #666;
+    --gray-scale-gray-–-500: #808080;
+    --gray-scale-gray-–-400: #999;
+    --gray-scale-gray-–-300: #b3b3b3;
+    --gray-scale-gray-–-200: #ccc;
+    --gray-scale-gray-–-100: #e6e6e6;
+    --gray-scale-gray-–-50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+    --font-family: "Poppins", sans-serif;
+}
+
+/* COMMON CSS START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.lh-0 {
+    line-height: 0;
+}
+
+
+/* COMMON CSS END */
+
+
+/* HEADER */
+header .topHeader {
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    background: var(--gray-scale-gray-–-800);
+    padding: 12px 0;
+}
+
+header .topHeader * {
+    color: var(--gray-scale-gray-–-300);
+}
+
+
+.topHeader .location {
+    margin-right: 8px;
+}
+
+.topHeader p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+.topHeaderRight ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-300);
+}
+
+
+.topHeaderRight ul li select {
+    background-color: transparent;
+    border: none;
+
+    outline: none;
+}
+
+.middleHeader {
+    padding: 24px 0;
+}
+
+.middleHeader .search form {
+    max-width: 498px;
+    margin: auto;
+}
+
+.middleHeader .search form .searchInput {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.middleHeader .search form span.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.middleHeader .search form input {
+    width: 100%;
+    display: block;
+    height: 45px;
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 6px 0 0 6px;
+    padding-left: 44px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: var(--gray-scale-gray-–-500);
+    outline: none;
+}
+
+.middleHeader .search form button {
+    height: 45px;
+    width: 100%;
+    max-width: 98px;
+    border-radius: 0 6px 6px 0;
+    background: var(--branding-success);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    border: none;
+    color: var(--gray-scale-white);
+
+}
+
+
+.middleHeader ul {
+    gap: 16px;
+}
+
+.middleHeader ul a {
+    color: var(--gray-scale-gray-–-900);
+}
+
+.middleHeader ul .divider {
+    font-size: 25px;
+    line-height: 0;
+    margin-top: 3px;
+    display: block;
+    color: var(--gray-scale-gray-–-200);
+    font-weight: 100;
+}
+
+
+.middleHeader .cartText p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-700);
+}
+
+.middleHeader .cartText span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.middleHeader .icon {
+    position: relative;
+}
+
+.middleHeader .icon .cart_counter {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-white);
+    border-radius: 16px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: var(--branding-success-dark);
+    line-height: 18px;
+}
+
+.bottomHeader .contactNum {
+    justify-content: end;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.bottomHeader ul {
+    gap: 32px;
+}
+
+.bottomHeader ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    display: block;
+    color: var(--gray-scale-gray-–-500);
+    transition: 0.3s;
+}
+
+.bottomHeader ul li:hover>a,
+.bottomHeader ul li a.active {
+    color: var(--branding-success);
+}
+
+.bottomHeader ul li {
+    position: relative;
+}
+
+.bottomHeader ul li .categoryMenu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+    background: var(--branding-success);
+    color: var(--gray-scale-white);
+
+}
+
+.bottomHeader ul li:hover .categoryMenu {
+    color: var(--gray-scale-white);
+
+}
+
+
+
+
+
+.bottomHeader .categorySubmenu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid var(--gray-scale-gray-–-400);
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.2s ease-in;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bottomHeader ul li .categoryMenu:hover~.categorySubmenu {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.bottomHeader .categorySubmenu a {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.bottomHeader .categorySubmenu a img {
+    width: 25px;
+}
+
+
+
+/* HEADER ENDS */
+
+
+
+
+
+/* FOOTER STARTS */
+footer .mblFooter{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid var(--gray-scale-gray-–-100);
+    padding: 15px 0;
+    z-index: 10;
+    box-shadow: 0px 0px 10px rgba(193, 193, 193, 0.527);
+}
+
+footer .mblFooter ul li a{
+    color: var(--gray-scale-gray-–-600);
+}
+
+footer .mblFooter ul li a:focus,
+footer .mblFooter ul li a:hover{
+    color: var(--branding-success);
+}
+
+/* FOOTER ENDS */
